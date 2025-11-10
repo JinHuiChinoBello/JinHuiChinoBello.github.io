@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurante Oriental</title>
 
-  <!-- Fuente y Font Awesome (para el logo de WhatsApp) -->
+  <!-- Fuente y Font Awesome (para el logo de WhatsApp y redes sociales) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Playfair+Display:wght@600&display=swap');
 
-    /* === ESTILOS GENERALES === */
+  
     body {
       margin: 0;
       font-family: "Marcellus", serif;
@@ -39,6 +39,7 @@
       justify-content: center;
       align-items: center;
       gap: 15px;
+      flex-wrap: wrap;
     }
 
     .logo img {
@@ -82,12 +83,16 @@
       padding: 10px 0;
       border-top: 2px solid #b48401;
       border-bottom: 2px solid #d49c00;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
     nav a {
       color: #000000;
       text-decoration: none;
-      margin: 0 25px;
+      margin: 0 15px;
       font-weight: bold;
       font-size: 18px;
       transition: color 0.3s;
@@ -177,6 +182,8 @@
       font-weight: bold;
       transform: rotateY(180deg);
       box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      padding: 10px;
+      text-align: center;
     }
 
     /* === UBICACIÓN === */
@@ -198,6 +205,30 @@
       margin-top: 30px;
       font-size: 18px;
       line-height: 1.8;
+    }
+
+    /* === REDES SOCIALES === */
+    .redes-sociales {
+      margin-top: 30px;
+    }
+
+    .redes-sociales h3 {
+      color: #9b0202;
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .redes-sociales a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 28px;
+      color: #9b0202;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .redes-sociales a:hover {
+      transform: scale(1.2);
+      color: #d49c00;
     }
 
     footer {
@@ -261,29 +292,71 @@
       background-color: #f0f0f0;
     }
 
-    .whatsapp-options a:last-child {
-      border-bottom: none;
+    .menu-imagenes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-top: 30px;
     }
-      .menu-imagenes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    flex-wrap: wrap; /* se adapta en pantallas pequeñas */
-    margin-top: 30px;
-  }
 
-  .menu-imagenes img {
-    width: 420px;
-    height: 920px;
-    object-fit: cover;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    transition: transform 0.3s;
-  }
+    .menu-imagenes img {
+      width: 420px;
+      height: auto;
+      max-width: 100%;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
 
-  .menu-imagenes img:hover {
-    transform: scale(1.05);
-  }
+    .menu-imagenes img:hover {
+      transform: scale(1.05);
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 768px) {
+      .logo-text h1 {
+        font-size: 28px;
+      }
+      nav a {
+        font-size: 16px;
+        margin: 5px 10px;
+      }
+      section h2 {
+        font-size: 32px;
+      }
+      section p {
+        font-size: 16px;
+      }
+      .tarjeta {
+        width: 90%;
+        height: 200px;
+      }
+      .menu-imagenes img {
+        width: 90%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo-text h1 {
+        font-size: 24px;
+      }
+      .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+        bottom: 15px;
+        right: 15px;
+      }
+      .redes-sociales a {
+        font-size: 24px;
+        margin: 0 6px;
+      }
+    }
+  </style>
+
   </style>
 </head>
 <body>
@@ -312,7 +385,6 @@
     Cada plato es una experiencia única preparada con ingredientes frescos y pasión.</p>
 
     <div class="contenedora6">
-      
       <div class="tarjeta">
         <div class="cara frente">
           <img src="img/Gemini_Generated_Image_hs4zw7hs4zw7hs4z.png" alt="Arroz Chino Especial, con pollo, cerdo, jamón, raíces y cebolla">
@@ -320,7 +392,6 @@
         <div class="cara atras"><h3>"Arroz Chino Especial, con pollo, cerdo, jamón, raíces y cebolla"</h3></div>
       </div>
 
-      
       <div class="tarjeta">
         <div class="cara frente">
           <img src="img/WhatsApp Image 2025-10-21 at 8.26.43 P.jpeg" alt="Chosuey ">
@@ -328,13 +399,12 @@
         <div class="cara atras"><h3>"Chosuey"</h3></div>
       </div>
   
-       <div class="tarjeta">
+      <div class="tarjeta">
         <div class="cara frente">
           <img src="img/WhatsApp Image 2025-10-21 at 8.26.43 PM (2).jpeg" alt="Pollo apanado frito">
         </div>
         <div class="cara atras"><h3>"Pollo apanado frito"</h3></div>
       </div>
-
 
       <div class="tarjeta">
         <div class="cara frente">
@@ -343,14 +413,12 @@
         <div class="cara atras"><h3>"Lumpias"</h3></div>
       </div>
 
-        <div class="tarjeta">
+      <div class="tarjeta">
         <div class="cara frente">
-        <img src="img/bda6cc0b-28d8-4c1a-8ee1-a5b5d35ce5fa (1).jpeg" alt="Arroz Chino Súper">
+          <img src="img/bda6cc0b-28d8-4c1a-8ee1-a5b5d35ce5fa (1).jpeg" alt="Arroz Chino Súper">
         </div>
         <div class="cara atras"><h3>"Arroz Chino Súper, con camarones, pollo, cerdo, jamón, raíces y cebolla"</h3></div>
       </div>
-
-
 
       <div class="tarjeta">
         <div class="cara frente">
@@ -359,7 +427,7 @@
         <div class="cara atras"><h3>"Espaguetis envueltos con salsa agridulce, jamón y pollo"</h3></div>
       </div>
 
-       <div class="tarjeta">
+      <div class="tarjeta">
         <div class="cara frente">
           <img src="img/WhatsApp Image 2025-10-21 at 8.26.42 PM.jpeg" alt="Pollo Agridulce bañado en salsa agridulce">
         </div>
@@ -368,45 +436,52 @@
 
       <div class="tarjeta">
         <div class="cara frente">
-          <img src="img/WhatsApp Image 2025-10-21 at 8.26.44 PM.jpeg" alt="Costillas fritads
-          s">
+          <img src="img/WhatsApp Image 2025-10-21 at 8.26.44 PM.jpeg" alt="Costillas fritas">
         </div>
         <div class="cara atras"><h3>"Costillas fritas de cerdo"</h3></div>
       </div>
     </div>
-
-     
-
-
-    
-
   </section>
 
-  <!-- ====== OTRAS SECCIONES ====== -->
-<!-- ====== SECCIÓN MENÚ ====== -->
-<section id="menu">
-  <h2>Menú</h2>
-  <p>Explora nuestros platos preparados con ingredientes frescos y recetas tradicionales.</p>
+  <!-- ====== SECCIÓN MENÚ ====== -->
+  <section id="menu">
+    <h2>Menú</h2>
+    <p>Explora nuestros platos preparados con ingredientes frescos y recetas tradicionales.</p>
 
-  <div class="menu-imagenes">
-    <img src="img/Imagen de WhatsApp 2025-10-22 a las 18.20.27_edf1691d.jpg" alt="Plato 1">
-    <img src="img/c7e24429-5f22-433b-b3e6-554abc810fe0.jpeg" alt="Plato 2">
-  </div>
-</section>
+    <div class="menu-imagenes">
+      <img src="img/Imagen de WhatsApp 2025-10-22 a las 18.20.27_edf1691d.jpg" alt="Plato 1">
+      <img src="img/c7e24429-5f22-433b-b3e6-554abc810fe0.jpeg" alt="Plato 2"> <br><br>
+      <img src="img/Pin de Pinterest Alimentación Sostenible Ilustrado Verde (4).png" alt="">
+      <img src="img/Pin de Pinterest Alimentación Sostenible Ilustrado Verde (3).png" alt=""><br><br>
+      <img src="img/Pin de Pinterest Alimentación Sostenible Ilustrado Verde (3).jpg" alt="">
+   
+    </div>
+    </div>
+  </section>
 
+  <!-- ====== SECCIÓN UBICACIÓN ====== -->
   <section id="ubicacion">
     <h2>Ubicación</h2>
-     <p>📍 Calle 46a No. 49-48 (Por Cotrafa) - Bello, Antioquia</p>
+    <p>📍 Calle 46a No. 49-48 (Por Cotrafa) - Bello, Antioquia</p>
     <p>Encuéntranos en el corazón de la ciudad. ¡Ven a disfrutar de la mejor comida oriental!</p>
     <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2850.187309464266!2d-75.55960242684537!3d6.332063893657538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f102ad588fd%3A0xc8fed2a78ad8356d!2sJin%20Hui%20Chino!5e1!3m2!1sen!2sco!4v1731192983496!5m2!1sen!2sco" allowfullscreen="" loading="lazy"></iframe>
   </section>
 
+  <!-- ====== SECCIÓN CONTACTO ====== -->
   <section id="contacto">
     <h2>Contacto</h2>
     <p>📞 304 358 97 75</p>
     <p>📞 300 318 76 36</p>
     <p>📧 jinhuichinobello@gmail.com</p>
     <p>🕒 Todos los días de la semana 11:00 a.m. - 9:00 p.m.</p>
+
+    <!-- Redes Sociales -->
+    <div class="redes-sociales">
+      <h3>Síguenos en redes:</h3>
+      <a href="https://www.facebook.com/share/1L2ZAiePLB/" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/jinhuichinobello?igsh=MW1ycjBmaDl1dHdjdQ==" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@jin.hui.chino?_r=1&_t=ZS-91I3YsuBrFf" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+    </div>
   </section>
 
   <footer>
@@ -446,7 +521,8 @@
   </script>
 
 </body>
-</html>
+</
+
 
 
 
