@@ -1,0 +1,127 @@
+
+        body { 
+        font-family: Arial, sans-serif; 
+        text-align: center;
+        margin: 0; 
+        padding: 0; }
+
+        header { 
+            background-color: #eeaaaa; 
+            color: #fff; 
+            padding: 20px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            flex-direction: column; }
+        h1{ 
+            margin: 10px 0; }
+        nav a {
+             margin: 0 15px; 
+             color: #fff; 
+             text-decoration: none; 
+             cursor: pointer; }
+
+        .content { 
+            padding: 20px; }
+
+        .menu-section, .map-container, .contact-section {
+             padding: 20px; 
+             display: none; } /* Ocultar las secciones inicialmente */
+        footer {
+             background-color: #333; 
+             color: #fff; 
+             padding: 10px;
+              margin-top: 20px; }
+        img.logo {
+             width: 100px; 
+             height: auto; } /* Ajusta el tamaño del logo */
+        img.menu 
+        { width: 80%;
+             height: auto;
+              margin: 10px 0; } /* Ajusta el tamaño de las imágenes del menú */
+        .food-images img {
+             width: 100%; 
+             height: auto; 
+             max-width: 500px;
+              margin: 10px 0; } /* Ocultar las imágenes de los platos por defecto */
+        
+        .whatsapp-button {
+            background-color: #25d366;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .whatsapp-button:hover {
+            background-color: #128c7e;
+        }
+
+        /* Estilo para el botón flotante de WhatsApp */
+        .whatsapp-float-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            border: none;
+            border-radius: 50%;
+            color: white;
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+        }
+
+        .whatsapp-float-button:hover {
+            background-color: #128c7e;
+        }
+
+
+        
+
+     
+     .contenedora h1{
+        color: white;
+        font-size: 70px;
+       font-family:Broadway;
+     }
+     .contenedora6{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:15px;
+      max-width:1400px;
+    }
+    .contenedora6 a{
+      display:block;
+      border-radius:8px;
+      overflow:hidden;
+    }
+    .contenedora6 img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+      display:block;
+      transition: transform .3s;
+    }
+    .contenedora6 img:hover{
+      transform:scale(1.1);
+    }
+  .contenedora7 {
+    display: flex;           /* Coloca los elementos en línea */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Alinea verticalmente */
+    gap: 20px;               /* Espacio entre las imágenes */
+    flex-wrap: wrap;         /* Para que se acomoden si la pantalla es pequeña */
+  }
+
+  .contenedora7 img {
+    width: 300px;            /* Tamaño de las imágenes */
+    height: auto;
+    border-radius: 10px;     /* Bordes redondeados (opcional) */
+  }
