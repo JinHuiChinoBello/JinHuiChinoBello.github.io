@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18061791881"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18061791881');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurante Oriental</title>
 
-  <!-- Fuente y Font Awesome (para el logo de WhatsApp y redes sociales) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Playfair+Display:wght@600&display=swap');
 
-  
     body {
       margin: 0;
       font-family: "Marcellus", serif;
@@ -316,47 +323,19 @@
 
     /* === RESPONSIVE === */
     @media (max-width: 768px) {
-      .logo-text h1 {
-        font-size: 28px;
-      }
-      nav a {
-        font-size: 16px;
-        margin: 5px 10px;
-      }
-      section h2 {
-        font-size: 32px;
-      }
-      section p {
-        font-size: 16px;
-      }
-      .tarjeta {
-        width: 90%;
-        height: 200px;
-      }
-      .menu-imagenes img {
-        width: 90%;
-        height: auto;
-      }
+      .logo-text h1 { font-size: 28px; }
+      nav a { font-size: 16px; margin: 5px 10px; }
+      section h2 { font-size: 32px; }
+      section p { font-size: 16px; }
+      .tarjeta { width: 90%; height: 200px; }
+      .menu-imagenes img { width: 90%; }
     }
 
     @media (max-width: 480px) {
-      .logo-text h1 {
-        font-size: 24px;
-      }
-      .whatsapp-btn {
-        width: 50px;
-        height: 50px;
-        font-size: 28px;
-        bottom: 15px;
-        right: 15px;
-      }
-      .redes-sociales a {
-        font-size: 24px;
-        margin: 0 6px;
-      }
+      .logo-text h1 { font-size: 24px; }
+      .whatsapp-btn { width: 50px; height: 50px; font-size: 28px; bottom: 15px; right: 15px; }
+      .redes-sociales a { font-size: 24px; margin: 0 6px; }
     }
-  </style>
-
   </style>
 </head>
 <body>
@@ -378,7 +357,6 @@
     </nav>
   </header>
 
-  <!-- ====== SECCIÓN INICIO ====== -->
   <section id="inicio" class="active">
     <h2>Bienvenido</h2>
     <p>Disfruta los auténticos sabores de la cocina oriental en un ambiente elegante y acogedor.  
@@ -387,14 +365,14 @@
     <div class="contenedora6">
       <div class="tarjeta">
         <div class="cara frente">
-          <img src="img/Gemini_Generated_Image_hs4zw7hs4zw7hs4z.png" alt="Arroz Chino Especial, con pollo, cerdo, jamón, raíces y cebolla">
+          <img src="img/Gemini_Generated_Image_hs4zw7hs4zw7hs4z.png" alt="Arroz Chino Especial">
         </div>
         <div class="cara atras"><h3>"Arroz Chino Especial, con pollo, cerdo, jamón, raíces y cebolla"</h3></div>
       </div>
 
       <div class="tarjeta">
         <div class="cara frente">
-          <img src="img/WhatsApp Image 2025-10-21 at 8.26.43 P.jpeg" alt="Chosuey ">
+          <img src="img/WhatsApp Image 2025-10-21 at 8.26.43 P.jpeg" alt="Chosuey">
         </div>
         <div class="cara atras"><h3>"Chosuey"</h3></div>
       </div>
@@ -408,7 +386,7 @@
 
       <div class="tarjeta">
         <div class="cara frente">
-          <img src="img/WhatsApp Image 2025-10-21 at 8.26.43 PM (1).jpeg" alt="Lumpias con verduras, jamón y pollo">
+          <img src="img/WhatsApp Image 2025-10-21 at 8.26.43 PM (1).jpeg" alt="Lumpias">
         </div>
         <div class="cara atras"><h3>"Lumpias"</h3></div>
       </div>
@@ -422,14 +400,14 @@
 
       <div class="tarjeta">
         <div class="cara frente">
-          <img src="img/WhatsApp Image 2025-10-21 at 8.26.43 PM.jpeg" alt="Espaguetis envueltos con salsa agridulce y jamón">
+          <img src="img/WhatsApp Image 2025-10-21 at 8.26.43 PM.jpeg" alt="Espaguetis envueltos">
         </div>
         <div class="cara atras"><h3>"Espaguetis envueltos con salsa agridulce, jamón y pollo"</h3></div>
       </div>
 
       <div class="tarjeta">
         <div class="cara frente">
-          <img src="img/WhatsApp Image 2025-10-21 at 8.26.42 PM.jpeg" alt="Pollo Agridulce bañado en salsa agridulce">
+          <img src="img/WhatsApp Image 2025-10-21 at 8.26.42 PM.jpeg" alt="Pollo Agridulce">
         </div>
         <div class="cara atras"><h3>"Pollo Agridulce bañado en salsa agridulce"</h3></div>
       </div>
@@ -443,31 +421,26 @@
     </div>
   </section>
 
-  <!-- ====== SECCIÓN MENÚ ====== -->
   <section id="menu">
     <h2>Menú</h2>
     <p>Explora nuestros platos preparados con ingredientes frescos y recetas tradicionales.</p>
 
     <div class="menu-imagenes">
       <img src="img/Imagen de WhatsApp 2025-10-22 a las 18.20.27_edf1691d.jpg" alt="Plato 1">
-      <img src="img/c7e24429-5f22-433b-b3e6-554abc810fe0.jpeg" alt="Plato 2"> <br><br>
-      <img src="img/Pin de Pinterest Alimentación Sostenible Ilustrado Verde (4).png" alt="">
-      <img src="img/Pin de Pinterest Alimentación Sostenible Ilustrado Verde (3).png" alt=""><br><br>
-      <img src="img/Pin de Pinterest Alimentación Sostenible Ilustrado Verde (3).jpg" alt="">
-   
-    </div>
+      <img src="img/c7e24429-5f22-433b-b3e6-554abc810fe0.jpeg" alt="Plato 2">
+      <img src="img/Pin de Pinterest Alimentación Sostenible Ilustrado Verde (4).png" alt="Plato 3">
+      <img src="img/Pin de Pinterest Alimentación Sostenible Ilustrado Verde (3).png" alt="Plato 4">
+      <img src="img/Pin de Pinterest Alimentación Sostenible Ilustrado Verde (3).jpg" alt="Plato 5">
     </div>
   </section>
 
-  <!-- ====== SECCIÓN UBICACIÓN ====== -->
   <section id="ubicacion">
     <h2>Ubicación</h2>
     <p>📍 Calle 46a No. 49-48 (Por Cotrafa) - Bello, Antioquia</p>
     <p>Encuéntranos en el corazón de la ciudad. ¡Ven a disfrutar de la mejor comida oriental!</p>
-    <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2850.187309464266!2d-75.55960242684537!3d6.332063893657538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f102ad588fd%3A0xc8fed2a78ad8356d!2sJin%20Hui%20Chino!5e1!3m2!1sen!2sco!4v1731192983496!5m2!1sen!2sco" allowfullscreen="" loading="lazy"></iframe>
+    <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.414441221147!2d-75.5606611!3d6.340274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f03f3885d77%3A0x6b186b5b5b5b5b5b!2sJin%20Hui%20Chino%20Bello!5e0!3m2!1ses!2sco!4v1620000000000" allowfullscreen="" loading="lazy"></iframe>
   </section>
 
-  <!-- ====== SECCIÓN CONTACTO ====== -->
   <section id="contacto">
     <h2>Contacto</h2>
     <p>📞 304 358 97 75</p>
@@ -475,12 +448,11 @@
     <p>📧 jinhuichinobello@gmail.com</p>
     <p>🕒 Todos los días de la semana 11:00 a.m. - 9:00 p.m.</p>
 
-    <!-- Redes Sociales -->
     <div class="redes-sociales">
       <h3>Síguenos en redes:</h3>
-      <a href="https://www.facebook.com/share/1L2ZAiePLB/" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/jinhuichinobello?igsh=MW1ycjBmaDl1dHdjdQ==" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.tiktok.com/@jin.hui.chino?_r=1&_t=ZS-91I3YsuBrFf" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.facebook.com/share/1L2ZAiePLB/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/jinhuichinobello?igsh=MW1ycjBmaDl1dHdjdQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@jin.hui.chino?_r=1&_t=ZS-91I3YsuBrFf" target="_blank"><i class="fab fa-tiktok"></i></a>
     </div>
   </section>
 
@@ -488,7 +460,6 @@
     © 2025 Restaurante Jin Hui Chino — Todos los derechos reservados.
   </footer>
 
-  <!-- ====== BOTÓN FLOTANTE DE WHATSAPP ====== -->
   <div class="whatsapp-btn" id="whatsapp-btn">
     <i class="fab fa-whatsapp"></i>
   </div>
@@ -505,7 +476,6 @@
       document.getElementById(id).classList.add("active");
     }
 
-    // Lógica del botón de WhatsApp
     const btn = document.getElementById('whatsapp-btn');
     const opciones = document.getElementById('whatsapp-options');
 
@@ -521,8 +491,7 @@
   </script>
 
 </body>
-</
-
+</html>
 
 
 
